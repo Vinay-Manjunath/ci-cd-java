@@ -22,7 +22,6 @@ jobs:
 
       - name: Build WAR file
         run: |
-          cd HelloWorld.jsp
           ./gradlew war
 
       - name: Build Docker image
