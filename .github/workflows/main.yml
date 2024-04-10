@@ -20,6 +20,11 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      - name: Build WAR file
+        run: |
+          cd path/to/your/project
+          ./gradlew war
+
       - name: Build Docker image
         run: docker build -t vinayksm86/java_gradle .
 
