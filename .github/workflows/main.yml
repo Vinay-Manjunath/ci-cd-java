@@ -22,7 +22,7 @@ jobs:
 
       - name: Build WAR file
         run: |
-          cd path/to/your/project
+          cd HelloWorld.jsp
           ./gradlew war
 
       - name: Build Docker image
